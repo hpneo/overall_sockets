@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Ingresar punto de venta</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="/css/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <aside id="pdv_list">
+      <h3>Puntos de venta creados:</h3>
+      <ul>
+
+      </ul>
+    </aside>
+    <form id="form" method="POST">
+      <p>
+        <label for="pdv_codigo">Código</label>
+        <input type="text" name="pdv[codigo]" id="pdv_codigo">
+      </p>
+      <p>
+        <label for="pdv_nombre">Nombre</label>
+        <input type="text" name="pdv[nombre]" id="pdv_nombre">
+      </p>
+      <p>
+        <label for="pdv_direccion">Dirección</label>
+        <input type="text" name="pdv[direccion]" id="pdv_direccion">
+      </p>
+      <p>
+        <label for="pdv_area">Área</label>
+        <input type="text" name="pdv[area]" id="pdv_area">
+      </p>
+      <p>
+        <label for="pdv_rango">Rango</label>
+        <input type="text" name="pdv[rango]" id="pdv_rango">
+      </p>
+      <p>
+        <label for="pdv_latitud">Latitud</label>
+        <input type="text" name="pdv[latitud]" id="pdv_latitud">
+      </p>
+      <p>
+        <label for="pdv_longitud">Longitud</label>
+        <input type="text" name="pdv[longitud]" id="pdv_longitud">
+      </p>
+      <p>
+        <label for="pdv_cadena">Cadena</label>
+        <input type="text" name="pdv[cadena]" id="pdv_cadena">
+      </p>
+      <p>
+        <label for="pdv_distrito">Distrito</label>
+        <input type="text" name="pdv[distrito]" id="pdv_distrito">
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+      </p>
+    </form>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
